@@ -7,6 +7,7 @@ import analyt from "./../images/Logo Analytex.png";
 import crypto from "./../images/Logo CryptEx.png";
 import polygon from "./../images/polygon 1.png";
 
+import { HashLink } from 'react-router-hash-link';
 import { ApplyBtn } from "../common/styled";
 
 const TopSection = () => {
@@ -16,7 +17,9 @@ const TopSection = () => {
         <section className="topSection">
             <h1>HashEx affiliate program</h1>
             <h3>Support the HashEx mission of making the DeFi market a safe space while taking advantage of HashEx offers.</h3>
-            <ApplyBtn to={"#apply"}>Apply for partnership</ApplyBtn>
+            <HashLink to={"#apply"}>
+                <ApplyBtn>Apply for partnership</ApplyBtn>
+            </HashLink>
             <div className="partners">
                 <img src={ape} alt="" />
                 <img src={forta} alt="" />

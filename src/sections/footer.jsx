@@ -95,9 +95,11 @@ const Footer = () => {
                     </div>
                 </Link>
                 <div className="socialMedia">
-                    {socialMedia.map(icon => {
-                        return <div>
-                            <img src={icon} />
+                    {socialMedia.map((icon, i) => {
+                        return <div key={i}>
+                            <a href="#" target={"_blank"}>
+                                <img src={icon} />
+                            </a>
                         </div>
                     })}
                 </div>
@@ -106,11 +108,11 @@ const Footer = () => {
                 <a href="#">Cookie Policy</a>
             </div>
             <div className="links">
-                {footerData.chunks.map(chunk => {
-                    return <div className="footerChunk">
+                {footerData.chunks.map((chunk, i) => {
+                    return <div className="footerChunk" key={i}>
                         <h4>{chunk.heading}</h4>
-                        {chunk.links.map(link => {
-                            return <a href={link.url}>{link.name}</a>
+                        {chunk.links.map((link, j) => {
+                            return <a key={j} href={link.url}>{link.name}</a>
                         })}
                     </div>
                 })}

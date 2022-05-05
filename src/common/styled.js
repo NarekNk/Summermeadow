@@ -2,17 +2,18 @@ import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const ApplyBtn = styled(HashLink)`
-text-align: center;
-text-decoration: none;
-color: var(--black);
-padding: 15px 30px;
-background: linear-gradient(91.83deg, #7AF051 16.38%, rgba(194, 240, 81, 0.8) 116.75%);
-border-radius: 30px;
+export const ApplyBtn = styled.button`
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    padding: 15px 30px;
+    background: linear-gradient(91.83deg, #7AF051 16.38%, rgba(194, 240, 81, 0.8) 116.75%);
+    border-radius: 30px;
 
-font-size: 16px;
-&:hover {
-    box-shadow: 0 0 5px green; 
+    font-size: 16px;
+    &:hover {
+        box-shadow: 0 0 5px green; 
 }
 `
 

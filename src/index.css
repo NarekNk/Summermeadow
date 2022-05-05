@@ -248,7 +248,7 @@ textarea {
   padding-right: 200px;
   max-width: 400px;
   background-color: var(--white);
-  color: var(--gray);
+  color: var(--black);
   border: none;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -322,6 +322,14 @@ footer a {
   margin-right: 20px;
 }
 
+
+/* validation */
+
+.error {
+  border: 2px solid red;
+  box-shadow: 0 0 5px red;
+}
+
 @media (max-width: 900px) {
   h1 {
     --fs-h1: 50px;
@@ -338,6 +346,8 @@ footer a {
   h4 {
     --fs-h4: 20px;
   }
+
+
 
   .navbar {
     flex-direction: column;
@@ -401,6 +411,10 @@ footer a {
   * {
     --page-padding-sides: 40px;
   }
+
+  input, textarea {
+    padding-right: 150px;
+  }
   h1 {
     --fs-h1: 35px;
   }
@@ -419,6 +433,10 @@ footer a {
 
   * {
     --page-padding-sides: 20px;
+  }
+  
+  input, textarea {
+    padding-right: 30px;
   }
   h1 {
     --fs-h1: 30px;
