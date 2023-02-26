@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import icon from "./../images/telegram.svg";
@@ -25,7 +25,7 @@ const Header = () => {
             <div className="header">
                 <Link to={"/"}>
                     <div className="logo">
-                        <img src={hashLogo} className="logo-hash" />
+                        <img src={hashLogo} className="logo-hash" alt="logo-hash"/>
                         <div>
                             <img src={Logo} alt="HashEx" />
                             <p className="logo-p">blockchain security</p>
@@ -47,7 +47,7 @@ const Nav = ({className}) => {
             <Link to={"/services"}>Services</Link>
             <Link to={"/products"}>Products</Link>
             <Link to={"/company"}>Company</Link>
-            <Link to={"/contacts"} className={"talk"}><img src={icon} /> Let's Talk</Link>
+            <Link to={"/contacts"} className={"talk"}><img src={icon} alt="telegram icon"/> Let's Talk</Link>
         </nav>
     )
 }

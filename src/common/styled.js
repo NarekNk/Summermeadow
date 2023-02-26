@@ -1,4 +1,3 @@
-import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 

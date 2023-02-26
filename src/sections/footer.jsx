@@ -88,7 +88,7 @@ const Footer = () => {
             <div>
                 <Link to={"/"}>
                     <div className="logo">
-                        <img src={hashLogo} className="logo-hash" />
+                        <img src={hashLogo} className="logo-hash" alt="hash logo"/>
                         <div>
                             <img src={Logo} alt="HashEx" />
                         </div>
@@ -98,7 +98,7 @@ const Footer = () => {
                     {socialMedia.map((icon, i) => {
                         return <div key={i}>
                             <a href="#" target={"_blank"}>
-                                <img src={icon} />
+                                <img src={icon} alt="icon"/>
                             </a>
                         </div>
                     })}

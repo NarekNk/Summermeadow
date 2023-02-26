@@ -42,9 +42,9 @@ const Apply = () => {
                     placeholder="Project Link*"
                     className={errors.projectUrl?.type === 'required' && 'error'}
                     {...register("projectUrl", { required: true })} />
-                <textarea rows="10" placeholder="Tell us about yourself" {...register("about", { required: true })}></textarea>
+                <textarea rows={10} placeholder="Tell us about yourself" {...register("about", { required: true })}></textarea>
 
-                <ApplyBtn to={"#apply"} className="applyBtn">Apply for partnership</ApplyBtn>
+                <ApplyBtn className="applyBtn">Apply for partnership</ApplyBtn>
                 <p className="policy">This site is protected by the <a href="#">Privacy Policy</a> and <a href="">Cookie Policy</a> apply</p>
             </form>
         </section>
